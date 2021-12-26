@@ -15,7 +15,7 @@ human_cell_tsne_file <- human_cell_tsne_file[2:dim(human_cell_tsne_file)[1],]
 human_cell_tsne_file[,2] <- paste0("/Users/rachelnong/Downloads/today_temp/RN2021MAR26-scRNAseq-ref-HPA_", "/", human_cell_tsne_file[,1], "/", human_cell_tsne_file[,2])
 human_cell_tsne_file[,3] <- paste0("/Users/rachelnong/Downloads/today_temp/RN2021MAR26-scRNAseq-ref-HPA_", "/", human_cell_tsne_file[,1], "/", human_cell_tsne_file[,3])
 
-ref_human <- read.csv("/Users/rachelnong/Downloads/today_temp/ENSEMBL_release98_gtf_homo_sapiens/Homo_sapiens.GRCh38.98.gtf.csv", header = FALSE)
+ref_human <- read.csv("~/ENSEMBL_release98_gtf_homo_sapiens/Homo_sapiens.GRCh38.98.gtf.csv", header = FALSE)
 #gene1_to_views[2] <- as.character(ref_human[which(ref_human[,3] == gene1_to_views),2])
 gene_to_views[,2] <- as.character(ref_human[match(as.character(gene_to_views[,1]), ref_human[,3]), 2])
 
