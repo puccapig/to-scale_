@@ -17,8 +17,8 @@ list0_ <- as.data.frame(table(list0_))
 list0_ <- list0_[which(list0_[,2] == 1),1]
 list0_ <- as.character(list0_)
 
-print(">>>>>list0_")
+#print(">>>>>list0_")
+return(list0_)
 }
 
 print("unique_in_one_group")
-
